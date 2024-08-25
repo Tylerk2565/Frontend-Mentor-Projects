@@ -1,0 +1,152 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.divider {
+  margin: auto;
+  width: 92%;
+  border-bottom: 1px solid var(--stone-100);
+  padding: 10px;
+}
+
+.container {
+  width: 100vw;
+  height: 1440px;
+  display: flex;
+  background-color: var(--stone-100);
+}
+
+.recipe-card {
+  width: 655px;
+  height: auto;
+  background-color: var(--white);
+  margin: auto;
+  border-radius: 12px;
+}
+
+.recipe-card h1,
+h3,
+h2,
+p {
+  padding-left: 25px;
+}
+
+.recipe-img img {
+  display: block;
+  width: 600px;
+  height: 300px;
+  margin: 20px auto 20px auto;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+.info #recipe-name {
+  font-size: 32px;
+  text-align: left;
+  padding-bottom: 10px;
+  font-family: "Young Serif";
+  font-weight: 400;
+}
+
+.info #desc {
+  font-size: 16px;
+  width: 92%;
+  padding-bottom: 20px;
+  font-style: "Outfit";
+  font-weight: 400;
+}
+
+/* Preparation */
+
+.prep {
+  width: 600px;
+  height: 150px;
+  background-color: var(--rose-50);
+  border-radius: 10px;
+  margin: auto;
+}
+
+.prep h3 {
+  padding: 10px 10px 10px 20px;
+  color: var(--rose-800);
+  font-family: "Young Serif";
+  font-weight: 400;
+}
+
+.prep ul {
+  margin-left: 50px;
+}
+
+.prep li {
+  padding: 5px;
+}
+
+.prep span {
+  font-weight: bold;
+  font-family: "Young Serif";
+  font-weight: 400;
+}
+
+/* Ingredients */
+
+.ingredients h2 {
+  color: var(--brown-800);
+  padding: 10px 10px 10px 25px;
+  font-family: "Young Serif";
+  font-weight: 400;
+}
+
+.ingredients ul {
+  margin-left: 50px;
+}
+
+.ingredients li {
+  padding: 5px;
+}
+
+/* Instructions */
+
+.instructions h2 {
+  padding: 10px 10px 10px 25px;
+  color: var(--brown-800);
+  font-family: "Young Serif";
+  font-weight: 400;
+}
+
+.instructions ol {
+  margin-left: 50px;
+}
+
+.instructions li {
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.instructions li::marker {
+  color: var(--brown-800);
+  font-weight: bold;
+}
+
+.instructions span {
+  font-weight: bold;
+  font-family: "Young Serif";
+  font-weight: 400;
+}
+
+/* Nutrition */
+
+.nutrition {
+}
